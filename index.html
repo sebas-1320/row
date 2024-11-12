@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulacion del DOM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <section id="cont-general">
+        <div class="left">
+            <h2>INTERACCIONES</h2>
+            <p>Juan Sebastian Tovar Paez<br>FICHA:2828866</p>
+            <button id="circulo" onclick="Circulo()">Circulo</button>
+            <button id="rombo" onclick="Rombo()">Rombo</button>
+            <button id="fondoColor" onclick="FondoColor()">Fondo Color </button>
+            <button id="fondoImagen" onclick="FondoImagen()">Fondo Imagen</button>
+            <button id="top" onclick="BtnTop()">Top</button>
+            <button id="btnLeft" onclick="BtnLeft()">Left</button>
+            <button id="bottom" onclick="BtnBottom()">Bottom</button>
+            <button id="btnRight" onclick="BtnRight()">Right</button>
+            <button id="" onclick = "">Diagonal</button>
+            <button id="" onclick = "">Animation</button>
+            <button id="" onclick = "">Fondo degradado</button> 
+            <button id="btnEstrella" onclick = "BtnEstrella()">Estrella</button>
+            <button id="panelLateral" onclick= "Panel_Lateral()">Panel Lateral</button>
+            <button id="panelSuperior" onclick= "Panel_Superior()">Panel superior</button>
+            
+        </div>
+
+        <div class="right">
+
+            <h2 id="titulo">Figura</h2>
+
+            <div id="figura"></div>
+
+        </div>
+
+        <div id="panel_Lateral" class="">
+            <div class="row">
+                <h2>Menú</h2>
+                <button id="panelLateral" onclick= "Panel_Lateral()">X</button>
+                <li>Inicio</li>
+                <li>Productos</li>
+                <li>Servicios</li>
+                <li>Contacto</li>
+            </div>
+        </div>
+
+        <div id="panel_Superior" class="">
+            <div class="row">
+            <h2>Menú</h2>
+            <button id="panelSuperior" onclick= "Panel_Superior()">X</button>
+            </div>
+            <iframe width="560" height="315" width="560" height="315" src="https://www.youtube.com/embed/S_roMeig-YQ?si=G-HVF4Kp9ozIC1uh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

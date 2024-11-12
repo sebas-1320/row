@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    --primary-color: #8400ff;
+    --second-color: #460088;
+}
+
+#cont-general{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around	;
+    align-items: flex-start;
+    background-color: #000000;
+    padding: 40px 0;
+    transition: 1s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#cont-general.dia{
+    background: #fff;
+}
+
+.left,
+.right{
+    width: 45%;
+    border: 2px solid var(--primary-color);
+    text-align: center;
+    padding: 30px;
+    min-height: 70vh;
+    background: black;
+    box-shadow: 0 6px 10px 0px var(--second-color);
+    position: relative;
+}
+
+h2{
+    color: var(--primary-color);
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+p{
+    color: var(--second-color);
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+button{
+    background: transparent;
+    box-shadow: 0 4px 8px 0px #000;
+    border-radius: 14px;
+    padding: 14px 30px;
+    color: #fff;
+    width: 220px;
+    margin: 14px 20px;
+    transition: .4s;
+}
+
+button:hover{
+    box-shadow: 4px 4px 4px 4px var(--second-color);
+    color: var(--primary-color);
+}
+
+#figura{
+    width: 280px;
+    height: 280px;
+    background: var(--primary-color);
+    margin: 80px auto;
+    transition: 1s;
+}
+
+#PanelLateral{
+    position: absolute;
+    left: -400px;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    background: rgb(0, 255, 179);
+    z-index: 10;
+    transition: 0.4s;
+}
+
+#PanelLateral.active{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    background: rgb(0, 255, 179);
+    z-index: 10;
+}
+
+#PanelSuperior{
+    position: absolute;
+    left: 0px;
+    top: -200vh;
+    width: 100%;
+    height: 200px;
+    background: rgb(0, 255, 179);
+    z-index: 10;
+    transition: 0.4s;
+}
+
+#PanelSuperior.active{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 255, 179);
+    z-index: 10;
+}
