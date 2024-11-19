@@ -78,6 +78,20 @@ function BtnBottom(){
     figura.style.left = 0;
 }
 
+function Diagonal(){
+    
+}
+
+
+function Animacion(){
+    
+}
+
+function FonDegradado(){
+    const fondo = document.getElementById('cont-general');
+    fondo.style.background = "linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(0,105,61,1) 70%, rgba(0,196,151,1) 100%)"
+}
+
 function BtnEstrella(){
     const selectorTitulo = document.getElementById('titulo');
     const estrella = document.getElementById('figura');
@@ -86,22 +100,13 @@ function BtnEstrella(){
     estrella.style.clipPath = "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)";
     estrella.style.backgroundColor = "#8400ff";
 }
-function (){
 
-}
-
-function (){
-    
-}
-function (){
-    
-}
 function Panel_Lateral(){
-    const panel = document.getElementById("panel_Lateral");
+    const panel = document.getElementById("Panel_Lateral");
     panel.classList.toggle("active");
 }
 
 function Panel_Superior(){
-    const panelo = document.getElementById("panel_Superior");
-    panelo.classList.toggle("active");
+    const panel = document.getElementById("Panel_Superior");
+    panel.classList.toggle("active");
 }
